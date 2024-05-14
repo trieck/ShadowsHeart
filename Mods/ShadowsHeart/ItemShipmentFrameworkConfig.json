@@ -1,0 +1,44 @@
+{
+  "FileVersion": 1,
+  "Items": [
+    {
+      "TemplateUUID": "2f5636ff-8f50-47cd-9e3e-267ee39e806b",
+      "Send": {
+        "Quantity": 1,
+        "To": {
+          "CampChest": {
+            "Player1Chest": true,
+            "Player2Chest": true,
+            "Player3Chest": true,
+            "Player4Chest": true
+          },
+          "Host": false
+        },
+        "On": {
+          "SaveLoad": true,
+          "DayEnd": false
+        },
+        "NotifyPlayer": true,
+        "Check": {
+          "ItemExistence": {
+            "CampChest": {
+              "Player1Chest": true,
+              "Player2Chest": true,
+              "Player3Chest": true,
+              "Player4Chest": true
+            },
+            "PartyMembers": {
+              "ActiveParty": true,
+              "AtCamp": true
+            },
+            "FrameworkCheck": true
+          },
+          "PlayerProgression": {
+            "Level": 1,
+            "Act": 1
+          }
+        }
+      }
+    }
+  ]
+}
